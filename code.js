@@ -52,13 +52,13 @@ $(document).ready(function(){
                 });
 
                 $("#contact").click(function(){
-                    var w = $("#Social").width();
+                    //var w = $("#Social").width();
                     var h = $("#Social").height();
 
                     $("#gola").addClass("section"); //add .section class to display <p>
                     $("#gola").css({"display":"block"}); //change display to block
                     $("#gola").animate({
-                      borderRadius:'10px',width:w+"px",height:h+"px"}); //animate container to new size
+                      borderRadius:'10px',width:"200px",height:h+"px"}); //animate container to new size
                     $("#gola").html($("#Social").html());
 
                 });
