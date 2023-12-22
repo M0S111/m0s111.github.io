@@ -7,7 +7,7 @@
 body {
                 font-family: "Share Tech Mono",monospace;
                 font-size: 13pt;
-                background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.9),darkviolet),url("191277 (9) copy.jpg");
+                background-image: linear-gradient(to bottom right,rgba(0, 0, 100, 0.9),darkviolet),url("191277 (9) copy.jpg");
                 color: lightcyan;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -118,35 +118,63 @@ body {
                 fill: white;
               }
               to {
-                fill: red;
+                fill: indigo;
+              }
+            }
+            @keyframes blink2 {
+              from {
+                fill: white;
+              }
+              to {
+                fill: mediumvioletred;
+              }
+            }
+            @keyframes blink3 {
+              from {
+                fill: white;
+              }
+              to {
+                fill: rebeccapurple;
+              }
+            }
+            @keyframes blink4 {
+              from {
+                fill: white;
+              }
+              to {
+                fill: midnightblue;
+              }
+            }
+            @keyframes blink5 {
+              from {
+                fill: white;
+              }
+              to {
+                fill: purple;
               }
             }
             .txt {
-                fill: red;
-                animation: blink1 1s ease-in infinite alternate;
+                animation: blink2 1s ease-in infinite alternate;
                 font-size: 5pt;
                 opacity: 0;
              
             }
-            .spots {
+            .spots {animation: blink1 1s ease-in infinite alternate;
+            }
+            #info {
                 animation: blink1 1s ease-in infinite alternate;                
-
             }
-            #header {
-                background-image: url("https://www.sololearn.com/Uploads/header.jpg");
-                background-size: cover;
+            #work {
+                animation: blink2 1s ease-in infinite alternate;
             }
-            #header img {
-                display: block;
-                margin: auto;
+            #contact {
+                animation: blink3 1s ease-in infinite alternate;
             }
-            #header p {
-                font-size: 25pt;
-                color: orange;
-                padding-top: 5px;
-                margin: 0;
-                font-weight: bold;
-                text-align: center;
+            #resume {
+                animation: blink4 1s ease-in infinite alternate;
+            }
+            #funnies {
+                animation: blink5 1s ease-in infinite alternate;
             }
             #quote {
                 font-size: 12pt;
@@ -156,7 +184,7 @@ body {
             hr {
                 border: 0;
                 height: 1px;
-                background: #f36f48;
+                background: lightcyan;
             }
             i:hover ,img:hover {
                 filter: drop-shadow(5px 5px 10px white);
