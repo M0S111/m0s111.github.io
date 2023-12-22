@@ -44,7 +44,7 @@ $(document).ready(function(){
                     //get height of About div
 
                     $("#gola").addClass("section"); //add .section class to display <p>
-                    $("#gola").css({"display":"block"}); //change display to block
+                    $("#gola").css({"display":"block","overflow":"auto"}); //change display to block
                     $("#gola").animate({
                       borderRadius:'10px',width:"90%",height:h+"px"}); //animate container to new size
                     $("#gola").html($("#About").html());
@@ -53,12 +53,12 @@ $(document).ready(function(){
 
                 $("#contact").click(function(){
                     //var w = $("#Social").width();
-                    var h = $("#Social").height();
+                    //var h = $("#Social").height();
 
                     $("#gola").addClass("section"); //add .section class to display <p>
-                    $("#gola").css({"display":"block"}); //change display to block
+                    $("#gola").css({"display":"block","overflow":"hidden"}); //change display to block
                     $("#gola").animate({
-                      borderRadius:'10px',width:"200px",height:h+"px"}); //animate container to new size
+                      borderRadius:'10px',width:"200px",height:"170px"}); //animate container to new size
                     $("#gola").html($("#Social").html());
 
                 });
@@ -85,7 +85,7 @@ $(document).ready(function(){
                     var h = $("#haha").height();
 
                     $("#gola").addClass("section"); //add .section class to display <p>
-                    $("#gola").css({"display":"block"}); //change display to block
+                    $("#gola").css({"display":"block","overflow":"auto"}); //change display to block
                     $("#gola").animate({
                       borderRadius:'10px',width:w+"px",height:h+"px"}); //animate container to new size
                     $("#gola").html($("#haha").html());
@@ -97,7 +97,7 @@ $(document).ready(function(){
                 $("#work").click(function(){
 
                     $("#gola").addClass("section"); //add .section class to display <p>
-                    $("#gola").css({"display":"block"}); //change display to block
+                    $("#gola").css({"display":"block","overflow":"auto"}); //change display to block
                     $("#gola").animate({
                       borderRadius:'10px',width:"90%",height:"100%"}); //animate container to new size
                     $("#gola").html($("#Skills").html());

@@ -8,7 +8,7 @@ body {
                 font-family: "Share Tech Mono",monospace;
                 font-size: 13pt;
                 background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.9),darkviolet),url("191277 (9) copy.jpg");
-                color: lightpink;
+                color: lightcyan;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -16,26 +16,23 @@ body {
             #gola {
             position: absolute;
             display: none;
-            width: 10px;
-            height: 10px;
             top: 10%;
             left: 50%;
             /*translate: -50%;*/
             transform: translate(-50%);
             border-radius: 50%;
             max-height: 75%;
-            overflow: auto;
             border-style: hidden;
             box-shadow: 
-                0 0 10px #ff0000,
-                -10px 10px 80px #ff1a1a,
-                10px -10px 80px #ff3333,
-                inset 0 0 50px #ff0000,
-                inset 0px -15px 30px #ff1a1a,
-                inset 0px 15px 30px #ff3333,
-                inset 0px -15px 70px #ff1a1a,
-                inset 0px 15px 70px #ff3333;
-            animation: pulsate1 1s linear infinite alternate;
+                0 0 10px #fff,
+                -10px 10px 80px #f0f,
+                10px -10px 80px #0ff,
+                inset 0 0 50px #fff,
+                inset 0px -15px 30px #f0f,
+                inset 0px 15px 30px #0ff,
+                inset 0px -15px 70px #f0f,
+                inset 0px 15px 70px #0ff;
+            animation: pulsate 1s linear infinite alternate;
             z-index: 1;
             }
             #haha {
@@ -59,14 +56,14 @@ body {
                 border-bottom: 4px solid #ffffff;
                 box-shadow: 
                     /*0 0 10px #fff,*/
-                    -10px 10px 80px #ffcccc,
-                    10px -10px 80px #ff9999,
+                    -10px 10px 80px #f0f,
+                    10px -10px 80px #0ff,
                     inset 0 0 50px #fff,
-                    inset 0px -15px 30px #ffcccc,
-                    inset 0px 15px 30px #ff9999,
-                    inset 0px -15px 70px #ffcccc,
-                    inset 0px 15px 70px #ff9999;
-                animation: pulsate1 1s linear infinite alternate;
+                    inset 0px -15px 30px #f0f,
+                    inset 0px 15px 30px #0ff,
+                    inset 0px -15px 70px #f0f,
+                    inset 0px 15px 70px #0ff;
+                animation: pulsate 1s linear infinite alternate;
                 border-radius: 10px;
                 padding: 10px;
             }
@@ -102,10 +99,19 @@ body {
                 color: white;
                 cursor: pointer;
             }
-            @keyframes pulsate1 {
+            @keyframes pulsate {
 
             100% {
-                box-shadow: 0 0 20px #000, -20px 20px 80px #990000, 20px -20px 80px #4d0000, inset 0 0 50px #000, inset 0px -30px 30px #990000, inset 0px 30px 30px #4d0000, inset 0px -30px 70px #990000, inset 0px 30px 70px #4d0000;}
+                box-shadow: 
+                    0 0 20px #fff,
+                    -20px 20px 80px #f0f,
+                    20px -20px 80px #0ff,
+                    inset 0 0 50px #fff,
+                    inset 0px -30px 30px #f0f,
+                    inset 0px 30px 30px #0ff,
+                    inset 0px -30px 70px #f0f,
+                    inset 0px 30px 70px #0ff;
+                }
             }
             @keyframes blink1 {
               from {
