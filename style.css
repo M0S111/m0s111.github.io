@@ -7,7 +7,7 @@
 body {
                 font-family: "Share Tech Mono",monospace;
                 font-size: 13pt;
-                background-image: linear-gradient(to bottom right,rgba(0, 0, 100, 0.9),darkviolet),url("191277 (9) copy.jpg");
+                background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.9),rgba(0, 0, 70, 0.9),darkviolet),url("Photo_fin.jpg");
                 color: lightcyan;
                 background-size: contain;
                 background-repeat: no-repeat;
