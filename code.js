@@ -4,6 +4,21 @@ $(document).ready(function(){
 
                 $("#haha").html("<a class='closebtn'>[&times;]</a><h1><span>Programming Jokes</span></h1>"+ jest);
 
+                var win_W = window.innerWidth;
+                var win_H = window.innerHeight;
+
+                $("svg").attr("viewBox","0 0 "+win_W+" "+win_H);
+
+                $(window).resize(function(){
+
+                    win_W = window.innerWidth;
+                    win_H = window.innerHeight;
+
+                    $("svg").attr("viewBox","0 0 "+win_W+" "+win_H);
+                    $("svg").attr("width","100%");
+                    $("svg").attr("height","100%");
+                });
+
                 let slideIndex;
                 let i;
                 let slides = document.getElementsByClassName("mySlides");
@@ -13,6 +28,17 @@ $(document).ready(function(){
                 let year = date.getFullYear();
 
                 $("#foot").html("&copy; "+ year +" Mohammad Sheharyar's Page. All rights reserved.");
+
+
+                $("svg").mouseenter(function(){
+
+                    setTimeout(() => {
+
+                        $("#prompt").fadeIn(500);
+
+
+                    }, 3000);
+                });
 
                 var svgDoc =  document.getElementsByTagName('svg');
 
@@ -34,6 +60,12 @@ $(document).ready(function(){
                 $(".spots").mouseout(function(){
 
                     $(".txt").animate({opacity:"0"});
+
+                });
+
+                $(".spots").click(function(){
+
+                    $("#prompt").css({"display":"none"});
 
                 });
 

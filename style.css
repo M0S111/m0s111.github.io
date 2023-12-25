@@ -12,14 +12,24 @@ body {
                 background-size: contain;
                 background-repeat: no-repeat;
             }
-            
+            #prompt {
+                font-size: 10pt;
+                position: absolute;
+                transform: translateX(-50%);
+                top: 1%;
+                left: 50%;
+                display: none;
+            }
+            #sign {
+                animation: txtblink 5s ease-in infinite alternate;
+            }
             #gola {
             position: absolute;
             display: none;
             top: 10%;
             left: 50%;
             /*translate: -50%;*/
-            transform: translate(-50%);
+            transform: translateX(-50%);
             border-radius: 50%;
             max-height: 75%;
             border-style: hidden;
@@ -113,13 +123,19 @@ body {
                     inset 0px 30px 70px #0ff;
                 }
             }
+            @keyframes txtblink {
+        
+                0%   {color: #fff;}
+                25%  {color: #f0f;}
+                75%  {color: #0ff;}
+                100%  {color: #fff;}
+            }
             @keyframes blink1 {
-              from {
-                fill: white;
-              }
-              to {
-                fill: indigo;
-              }
+        
+                0%   {fill: #fff;}
+                25%  {fill: #f0f;}
+                75%  {fill: #0ff;}
+                100%  {fill: #fff;}
             }
             @keyframes blink2 {
               from {
@@ -154,28 +170,28 @@ body {
               }
             }
             .txt {
-                animation: blink2 1s ease-in infinite alternate;
-                font-size: 5pt;
+                animation: blink1 5s ease-in infinite alternate;
+                font-size: 10pt;
                 opacity: 0;
              
             }
-            .spots {animation: blink1 1s ease-in infinite alternate;
+            .spots {animation: blink1 5s ease-in infinite alternate;
             }
-            #info {
+            /*#info {
                 animation: blink1 1s ease-in infinite alternate;                
             }
             #work {
-                animation: blink2 1s ease-in infinite alternate;
+                animation: blink1 1s ease-in infinite alternate;
             }
             #contact {
-                animation: blink3 1s ease-in infinite alternate;
+                animation: blink1 1s ease-in infinite alternate;
             }
             #resume {
-                animation: blink4 1s ease-in infinite alternate;
+                animation: blink1 1s ease-in infinite alternate;
             }
             #funnies {
-                animation: blink5 1s ease-in infinite alternate;
-            }
+                animation: blink1 1s ease-in infinite alternate;
+            }*/
             #quote {
                 font-size: 12pt;
                 text-align: center;
@@ -253,7 +269,6 @@ body {
 
             /* Number text (1/3 etc) */
             .numbertext {
-              color: #f2f2f2;
               font-size: 12px;
               padding: 8px 12px;
               position: absolute;
@@ -265,7 +280,6 @@ body {
               text-align: center;
               background-color: #222;
               padding: 2px 16px;
-              color: white;
             }
 
             .row:after {
