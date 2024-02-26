@@ -152,7 +152,7 @@ $(document).ready(function(){
 
                     slideIndex++;
                     
-                    if (slideIndex > 12) {slideIndex = 1;}
+                    if (slideIndex > 13) {slideIndex = 1;}
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                       }
@@ -170,7 +170,7 @@ $(document).ready(function(){
 
                     slideIndex--;
                     
-                    if (slideIndex < 1) {slideIndex = 12;}
+                    if (slideIndex < 1) {slideIndex = 13;}
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                       }
